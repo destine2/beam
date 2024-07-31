@@ -12,6 +12,7 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
 
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
     <!-- This site is optimized with the Yoast SEO plugin v16.2 - https://yoast.com/wordpress/plugins/seo/ -->
     <title>Home - Beam Traders</title>
@@ -762,8 +763,7 @@
             }
         }
         
-        .wp-block-button .wp-block-button__link,
-        {
+        .wp-block-button .wp-block-button__link{
             color: #ffffff;
         }
         
@@ -2565,6 +2565,25 @@ flexibility(document.documentElement);</script>
             background-image: url(wp-content/uploads/2021/07/Asset-4pamm-trade-logo.png);
         }
     </style>
+
+    <style>
+
+        #entryDiv{
+            position: relative;
+        }
+        #particles-js{
+            position: absolute;
+            width: 100dvw;
+            height: 100dvh;
+            z-index: 1;
+        }
+        #mainImage{
+            z-index: 2;
+        }
+        #mainButton{
+            z-index: 2;
+        }
+    </style>
 </head>
 
 <body itemtype='https://schema.org/WebPage' itemscope='itemscope' class="home page-template-default page page-id-1206 ast-single-post ast-inherit-site-logo-transparent astra-hfb-header ast-desktop ast-page-builder-template ast-no-sidebar astra-3.2.0 ast-full-width-layout ast-sticky-header-shrink ast-inherit-site-logo-sticky loftloader-lite-enabled elementor-default elementor-kit-8 elementor-page elementor-page-1206 astra-addon-3.0.1">
@@ -2785,33 +2804,37 @@ flexibility(document.documentElement);</script>
                             </header>
                             <!-- .entry-header -->
 
-                            <div class="entry-content clear" itemprop="text">
+                            <div class="entry-content clear" id="entryDiv" itemprop="text">
 
 
-                                <div data-elementor-type="wp-page" data-elementor-id="1206" class="elementor elementor-1206" data-elementor-settings="[]">
+                                <div  data-elementor-type="wp-page" data-elementor-id="1206" class="elementor elementor-1206" data-elementor-settings="[]">
                                     <div class="elementor-section-wrap">
-                                        <section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-012e097 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
-                                            data-id="012e097" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
-                                            <div class="elementor-container elementor-column-gap-default">
+
+                                        <div id="particles-js"></div>
+                                        
+                                            <section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-012e097 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+                                                data-id="012e097" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+                                        
+                                            <div  class="elementor-container elementor-column-gap-default">
                                                 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7d74131" data-id="7d74131" data-element_type="column">
                                                     <div class="elementor-widget-wrap elementor-element-populated">
                                                         <div class="elementor-element elementor-element-9e90d11 elementor-widget elementor-widget-heading" data-id="9e90d11" data-element_type="widget" data-widget_type="heading.default">
                                                             <div class="elementor-widget-container">
-                                                                <h2 class="elementor-heading-title elementor-size-default">a GOLD, OIL &amp; CURRENCY investment communitY</h2>
+                                                                <h2  class="elementor-heading-title elementor-size-default">a GOLD, OIL &amp; CURRENCY investment communitY</h2>
                                                             </div>
                                                         </div>
                                                         <div class="elementor-element elementor-element-49859a2 elementor-widget elementor-widget-heading" data-id="49859a2" data-element_type="widget" data-widget_type="heading.default">
                                                             <div class="elementor-widget-container">
-                                                                <h2 class="elementor-heading-title elementor-size-default">Global Transparent Trading Platform</h2>
+                                                                <h2  class="elementor-heading-title elementor-size-default">Global Transparent Trading Platform</h2>
                                                             </div>
                                                         </div>
-                                                        <div class="elementor-element elementor-element-0bf3438 elementor-align-left elementor-mobile-align-center elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button" data-id="0bf3438" data-element_type="widget"
+                                                        <div id="mainButton" class="elementor-element elementor-element-0bf3438 elementor-align-left elementor-mobile-align-center elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button" data-id="0bf3438" data-element_type="widget"
                                                             data-widget_type="button.default">
                                                             <div class="elementor-widget-container">
                                                                 <div class="elementor-button-wrapper">
                                                                     <a href="index.html#pricing" class="elementor-button-link elementor-button elementor-size-sm" role="button">
                                                                         <span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Get Started</span>
+						<span  class="elementor-button-text">Get Started</span>
                                                                         </span>
                                                                     </a>
                                                                 </div>
@@ -2830,14 +2853,15 @@ flexibility(document.documentElement);</script>
 		</div>
 				</div>
 				</div> -->
-                                                        <div class="elementor-element elementor-element-2169eb8 elementor-align-left elementor-mobile-align-center elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button" data-id="2169eb8" data-element_type="widget"
+                                                        <div id="mainButton" class="elementor-element elementor-element-2169eb8 elementor-align-left elementor-mobile-align-center elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button" data-id="2169eb8" data-element_type="widget"
                                                             data-widget_type="button.default">
                                                             <div class="elementor-widget-container">
                                                                 <div class="elementor-button-wrapper">
                                                                     <a href="https://homelessontutor.com/beam/trade/register.php" class="elementor-button-link elementor-button elementor-size-sm" role="button">
                                                                         <span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon elementor-align-icon-left">
-				<i aria-hidden="true" class="hm hm-play-button"></i>			</span>
+				<i aria-hidden="true" class="hm hm-play-button"></i>			
+            </span>
                                                                         <span class="elementor-button-text">Register</span>
                                                                         </span>
                                                                     </a>
@@ -2848,15 +2872,18 @@ flexibility(document.documentElement);</script>
                                                 </div>
                                                 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c6f08a9" data-id="c6f08a9" data-element_type="column">
                                                     <div class="elementor-widget-wrap elementor-element-populated">
-                                                        <div class="elementor-element elementor-element-a808e1a elementor-widget elementor-widget-image" data-id="a808e1a" data-element_type="widget" data-widget_type="image.default">
-                                                            <div class="elementor-widget-container">
+                                                        <div  class="elementor-element elementor-element-a808e1a elementor-widget elementor-widget-image" data-id="a808e1a" data-element_type="widget" data-widget_type="image.default">
+                                                            <div id="mainImage" class="elementor-widget-container">
                                                                 <img width="702" height="715" src="wp-content/uploads/2021/07/slider_img02.png" class="attachment-large size-large" alt="" loading="lazy" srcset="wp-content/uploads/2021/07/slider_img02.png 702w,wp-content/uploads/2021/07/slider_img02-295x300.png 295w"
-                                                                    sizes="(max-width: 702px) 100vw, 702px" /> </div>
+                                                                    sizes="(max-width: 702px) 100vw, 702px" />
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </section>
+
+
                                         <section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-90cb6c0 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                             data-id="90cb6c0" data-element_type="section" id="services" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
                                             <div class="elementor-container elementor-column-gap-default">
@@ -5465,6 +5492,121 @@ flexibility(document.documentElement);</script>
                 window.addEventListener("load", asyncLoad, false);
             }
         })();
+    </script>
+
+    <script>
+
+particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 50, // Number of particles
+                    "density": {
+                        "enable": true,
+                        "value_area": 400 // Area density
+                    }
+                },
+                "color": {
+                    "value": "#ffffff" // Color of particles
+                },
+                "shape": {
+                    "type": "circle", // Shape of particles
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 8 // Number of sides for polygon shape
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3, // Size of particles
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150, // Distance between linked particles
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6, // Speed of particle movement
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse" // Repulse mode on hover
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push" // Push mode on click
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 5,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 100,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 3 // Number of particles added on click
+                    },
+                    "remove": {
+                        "particles_nb": 2 // Number of particles removed on click
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+
     </script>
 </body>
 
