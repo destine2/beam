@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
-<!-- Mirrored from pammtraders.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Feb 2022 23:45:06 GMT -->
-<!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<!-- /Added by HTTrack -->
 
 <head>
     <meta charset="UTF-8">
@@ -2571,18 +2567,53 @@ flexibility(document.documentElement);</script>
         #entryDiv{
             position: relative;
         }
+
+
         #particles-js{
             position: absolute;
             width: 100dvw;
             height: 100dvh;
             z-index: 1;
         }
+
+
         #mainImage{
             z-index: 2;
         }
         #mainButton{
             z-index: 2;
         }
+        
+        #main-first-text{
+            z-index: 4;
+        }
+
+        #main-second-text{
+            z-index: 4;
+        }
+
+        @media (max-width: 600px){
+
+
+            #mainImage{
+                z-index: 5;
+            }
+            
+            #main-section-div{
+            position: relative;
+            width: 100dvw;
+            height: 110dvh;
+        }
+
+        #particles-js{
+            position: absolute;
+            width: 100dvw;
+            height: 110dvh;
+            z-index: 1;
+        }
+
+        }
+
     </style>
 </head>
 
@@ -2812,20 +2843,20 @@ flexibility(document.documentElement);</script>
 
                                         <div id="particles-js"></div>
                                         
-                                            <section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-012e097 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+                                            <section id="main-section-div" data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-012e097 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
                                                 data-id="012e097" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
                                         
                                             <div  class="elementor-container elementor-column-gap-default">
                                                 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7d74131" data-id="7d74131" data-element_type="column">
                                                     <div class="elementor-widget-wrap elementor-element-populated">
-                                                        <div class="elementor-element elementor-element-9e90d11 elementor-widget elementor-widget-heading" data-id="9e90d11" data-element_type="widget" data-widget_type="heading.default">
-                                                            <div class="elementor-widget-container">
+                                                        <div id="main-first-text" class="elementor-element elementor-element-9e90d11 elementor-widget elementor-widget-heading" data-id="9e90d11" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div  class="elementor-widget-container">
                                                                 <h2  class="elementor-heading-title elementor-size-default">a GOLD, OIL &amp; CURRENCY investment communitY</h2>
                                                             </div>
                                                         </div>
-                                                        <div class="elementor-element elementor-element-49859a2 elementor-widget elementor-widget-heading" data-id="49859a2" data-element_type="widget" data-widget_type="heading.default">
-                                                            <div class="elementor-widget-container">
-                                                                <h2  class="elementor-heading-title elementor-size-default">Global Transparent Trading Platform</h2>
+                                                        <div id="main-second-text" class="elementor-element elementor-element-49859a2 elementor-widget elementor-widget-heading" data-id="49859a2" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div  class="elementor-widget-container">
+                                                                <h2 class="elementor-heading-title elementor-size-default">Global Transparent Trading Platform</h2>
                                                             </div>
                                                         </div>
                                                         <div id="mainButton" class="elementor-element elementor-element-0bf3438 elementor-align-left elementor-mobile-align-center elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button" data-id="0bf3438" data-element_type="widget"
@@ -2870,10 +2901,10 @@ flexibility(document.documentElement);</script>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c6f08a9" data-id="c6f08a9" data-element_type="column">
-                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div  class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c6f08a9" data-id="c6f08a9" data-element_type="column">
+                                                    <div id="mainImage" class="elementor-widget-wrap elementor-element-populated">
                                                         <div  class="elementor-element elementor-element-a808e1a elementor-widget elementor-widget-image" data-id="a808e1a" data-element_type="widget" data-widget_type="image.default">
-                                                            <div id="mainImage" class="elementor-widget-container">
+                                                            <div  class="elementor-widget-container">
                                                                 <img width="702" height="715" src="wp-content/uploads/2021/07/slider_img02.png" class="attachment-large size-large" alt="" loading="lazy" srcset="wp-content/uploads/2021/07/slider_img02.png 702w,wp-content/uploads/2021/07/slider_img02-295x300.png 295w"
                                                                     sizes="(max-width: 702px) 100vw, 702px" />
                                                             </div>
@@ -5499,20 +5530,20 @@ flexibility(document.documentElement);</script>
 particlesJS('particles-js', {
             "particles": {
                 "number": {
-                    "value": 50, // Number of particles
+                    "value": 110, // Number of particles
                     "density": {
                         "enable": true,
-                        "value_area": 400 // Area density
+                        "value_area": 900 // Area density
                     }
                 },
                 "color": {
-                    "value": "#ffffff" // Color of particles
+                    "value": "#aaaaaa" // Color of particles
                 },
                 "shape": {
                     "type": "circle", // Shape of particles
                     "stroke": {
                         "width": 0,
-                        "color": "#000000"
+                        "color": "#aaaaaa"
                     },
                     "polygon": {
                         "nb_sides": 8 // Number of sides for polygon shape
@@ -5524,7 +5555,7 @@ particlesJS('particles-js', {
                     }
                 },
                 "opacity": {
-                    "value": 0.5,
+                    "value": 0.3,
                     "random": false,
                     "anim": {
                         "enable": false,
@@ -5546,13 +5577,13 @@ particlesJS('particles-js', {
                 "line_linked": {
                     "enable": true,
                     "distance": 150, // Distance between linked particles
-                    "color": "#ffffff",
+                    "color": "#aaaaaa",
                     "opacity": 0.4,
                     "width": 1
                 },
                 "move": {
                     "enable": true,
-                    "speed": 6, // Speed of particle movement
+                    "speed": 2, // Speed of particle movement
                     "direction": "none",
                     "random": false,
                     "straight": false,
@@ -5610,7 +5641,6 @@ particlesJS('particles-js', {
     </script>
 </body>
 
-<!-- Mirrored from pammtraders.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Feb 2022 23:48:51 GMT -->
 
 </html>
 
